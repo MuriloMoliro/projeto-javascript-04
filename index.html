@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="description" content="Blackjack Game">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="Blackjack, Game, Cards">
+    
+    <title>MusicApp</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <script src="https://kit.fontawesome.com/d9cb041afb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="musicPlayer">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="/assets/406px-Sonic1&2Soundtrack.jpg" class="songImg" alt="Sonic">
+            <h1>STH1 spring yard zone (mega drive version)</h1>
+            <p>Masato Nakamura</p>
+
+            <audio id="song">
+                <source src="/assets/Sth1 Spring Yard Zone Mega Drive Version.mp3" type="audio/mpeg">
+            </audio>
+
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+
+</body>
+</html>
